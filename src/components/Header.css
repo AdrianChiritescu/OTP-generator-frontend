@@ -1,0 +1,11 @@
+header {
+    background: linear-gradient(to right,#fb9700 0%,#ff5810 51%,#5e1ee7 100%);
+}
+
+.headingText {
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
+    margin: 0;
+}
