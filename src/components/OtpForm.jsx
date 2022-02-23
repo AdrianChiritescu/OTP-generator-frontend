@@ -39,7 +39,7 @@ function OtpForm() {
       const postData = {
         userId: userId,
         timestamp: new Date(),
-        expiresIn: 0,
+        expiresIn: 30,
         otp: "",
       };
 
