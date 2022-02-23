@@ -1,9 +1,9 @@
 import "./OtpResult.css";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import OtpContext from "../context/OtpContext";
 import CountDown from "./CountDown";
 
-function OtpResult() {
+function OtpResult({ countDownTime }) {
   const { otp } = useContext(OtpContext);
 
   return (

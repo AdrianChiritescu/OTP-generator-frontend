@@ -1,9 +1,12 @@
 import "./CountDown.css";
 import { useEffect, useState } from "react";
+import { useContext } from "react";
+import OtpContext from "../context/OtpContext";
 
 const defaultRemainingTime = 30;
 
 function CountDown({ countDownTime }) {
+  const { deleteOtp } = useContext(OtpContext);
   const [remainingTime, setRemainingTime] = useState(defaultRemainingTime);
 
   useEffect(() => {
@@ -16,6 +19,7 @@ function CountDown({ countDownTime }) {
   const updateRemainingTime = (countDown) => {
     if (countDown <= 0) {
       setRemainingTime(0);
+      deleteOtp();
       return;
     }
 

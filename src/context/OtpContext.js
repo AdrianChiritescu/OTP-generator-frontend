@@ -3,7 +3,7 @@ import { createContext, useState } from "react";
 const OtpContext = createContext();
 
 export const OtpProvider = ({ children }) => {
-  const [otp, setOtp] = useState([]);
+  let [otp, setOtp] = useState([]);
 
   const generateOtp = async (postData) => {
     const response = await fetch(`/Otp/GenerateNew`, {
@@ -15,7 +15,6 @@ export const OtpProvider = ({ children }) => {
     });
 
     const data = await response.json();
-
     setOtp(data);
   };
 
