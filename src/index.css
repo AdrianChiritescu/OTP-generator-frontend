@@ -4,3 +4,9 @@ body {
   font-family: sans-serif;
 }
 
+.message{
+  color: #f57948;
+  font-size: 1rem;
+  text-align: center;
+  padding: 5px;
+}
