@@ -44,9 +44,9 @@ function OtpForm() {
                 timestamp: new Date(),
                 expiresIn: 0,
                 otp: "",
-              };
+            };
 
-              generateOtp(postData);
+            generateOtp(postData);
         }
     }
 
