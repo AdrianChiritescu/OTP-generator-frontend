@@ -43,19 +43,19 @@ function OtpForm() {
                 userId: userId,
                 timestamp: new Date(),
                 expiresIn: 0,
-                otp: "string",
+                otp: "",
               };
 
-            generateOtp(postData);
+              generateOtp(postData);
         }
     }
 
     return (
-        <form onSubmit={handleSubmit}>  
+        <form onSubmit={handleSubmit}>
             <div className="input-group">
                 <div>
                     <TextField onChange={handleUserIdChange} label="User ID" variant="outlined" value={userId}/>
-                    {message && <div className="message">{message}</div> }
+                    { message && <div className="message">{message}</div> }
                 </div>
                 <BasicDateTimePicker />
 
