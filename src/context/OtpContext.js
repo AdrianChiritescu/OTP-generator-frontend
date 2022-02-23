@@ -16,7 +16,10 @@ export const OtpProvider = ({ children }) => {
 
     const data = await response.json();
 
-    deleteOtp();
+    if (data.success) {
+      deleteOtp();
+    }
+
     setOtp(data);
   };
 

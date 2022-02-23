@@ -19,9 +19,6 @@ function OtpForm() {
     if (userId.trim() === "") {
       setBtnDisabled(true);
       setMessage(null);
-    } else if (userId.trim() !== "" && userId.trim().length < 3) {
-      setMessage("User ID must be at least 4 characters.");
-      setBtnDisabled(true);
     } else {
       setMessage(null);
       setBtnDisabled(false);
