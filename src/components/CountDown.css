@@ -1,12 +1,10 @@
-
-
-.countDown{
-    color: #333;
-    font-size: 1.2rem;
-    text-align: center;
+.countDown {
+  color: #333;
+  font-size: 1.2rem;
+  text-align: center;
 }
 
-.countDown span{
-    color: #f57948;
-    font-size: 1.4rem;
+.countDown span {
+  color: #f57948;
+  font-size: 1.4rem;
 }
