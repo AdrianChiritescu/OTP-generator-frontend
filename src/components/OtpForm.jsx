@@ -32,7 +32,7 @@ function OtpForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (userId.trim().length > 3) {
+    if (userId.trim() !== "") {
       const postData = {
         userId: userId,
         timestamp: new Date(),

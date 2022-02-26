@@ -3,7 +3,7 @@ import { useContext } from "react";
 import OtpContext from "../context/OtpContext";
 import CountDown from "./CountDown";
 
-function OtpResult({ countDownTime }) {
+function OtpResult() {
   const { otp } = useContext(OtpContext);
 
   return (
